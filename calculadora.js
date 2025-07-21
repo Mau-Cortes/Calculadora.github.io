@@ -19,3 +19,20 @@ function resultado(){
         pantalla.value = "Error";
     }
 }
+
+const calculadora = document.getElementById("calculadora");
+
+let escala = 1;
+
+function zoomIn() {
+  if (escala < 1.20)  // Limitar el zoom máximo
+  escala += 0.1;
+  document.getElementById("calculadora").style.transform = `scale(${escala})`;
+}
+
+function zoomOut() {
+  if (escala > 0.80) {
+    escala -= 0.1;
+    document.getElementById("calculadora").style.transform = `scale(${escala})`;
+  }
+}

@@ -11,6 +11,7 @@
 <title>Calculadora</title>
 </head>
 <body>
+  <div class="content pag">  
     <header class="content header">
         <h1 class="title">Inicio</h1>
         <p class="title">
@@ -28,8 +29,10 @@
         <br> Suma, resta, multiplica y divide en cuestión de segundos con una interfaz tan intuitiva que parece leerte la mente.
         </p>
     </section>
+
     <section class="content price"> 
-        <div>
+
+     <div class="content calculadora" id="calculadora">        
           <div class="caja">
             <input type="texto" id="pantalla">
      
@@ -53,9 +56,19 @@
             <button onclick="borraruno()">AC</button>
             <button onclick="resultado()">=</button>
         </div>
+     </div>
+          </div>   
+
+<!-- Botones para zoom -->
+    <div id="controles-zoom">
+        <button onclick="zoomIn()">🔍➕</button>
+        <button onclick="zoomOut()">🔍➖</button>
+    </div>
+
     </section>
-    </div>
-    </div>
+    
+      
+
     <section class="content resumen">
          <h2>✅ Resumen de funcionalidades de la Calculadora Basica:</h2>
         <p>
@@ -73,7 +86,10 @@
             🔹 Simple, útil y lista para ayudarte cuando más la necesitas.
          </p>
     </footer>
-    
+  </div>    
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3846872546157330"
+     crossorigin="anonymous"></script>
 
 <script src="calculadora.js"></script>
 </body>

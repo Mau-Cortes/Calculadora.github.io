@@ -108,3 +108,35 @@ footer {
     background-size: cover;
     font-size: 15px;
 }
+
+#controles-zoom {
+    display: flex;
+    justify-content: center;
+    gap: 1px; /* Espacio entre los botones */
+    margin-top: 35px; /* Espacio superior para separar de otros elementos */
+}
+
+#controles-zoom button {
+    font-size: 24px;
+    padding: 1px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#controles-zoom button:hover {
+  background-color: #0056b3;
+}
+
+.calculadora {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    padding: 90px;
+}
+
+.pag {
+    background-size: cover;
+}
